@@ -42,8 +42,8 @@ export JIRA_URL=<localhost:8090>
 export JIRA_EMAIL=<email_id>
 ``
 
-* Jira Access Token
+* Jira API Token
 
 ``
-export JIRA_ACCESS_TOKEN=<access_token>
+export JIRA_API_TOKEN=<api_token>
 ``

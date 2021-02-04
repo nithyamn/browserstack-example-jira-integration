@@ -25,7 +25,7 @@ public class JiraIntegration{
         try {
             String jiraURL = System.getenv("JIRA_URL"); //e.g. something.atlassian.net OR if the Jira instance is hosted locally the something like this localhost:8090
             String jiraEmail = System.getenv("JIRA_EMAIL"); // The email id linked to your Jira instance
-            String jiraAccessToken = System.getenv("JIRA_ACCESS_TOKEN"); //Jira password or AccessToken
+            String jiraAccessToken = System.getenv("JIRA_API_TOKEN"); //Jira password or API token
 
             URL url = new URL("https://"+jiraURL+"/rest/api/2/issue");
             String jiraCreds = jiraEmail+":"+jiraAccessToken;
