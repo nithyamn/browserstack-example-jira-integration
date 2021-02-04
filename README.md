@@ -47,3 +47,5 @@ export JIRA_EMAIL=<email_id>
 ``
 export JIRA_API_TOKEN=<api_token>
 ``
+
+Jira Integration code reference : https://community.atlassian.com/t5/Answers-Developer-Questions/Create-issue-via-REST-API-useing-Java/qaq-p/518478
