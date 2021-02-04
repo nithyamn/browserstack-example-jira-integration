@@ -1,5 +1,11 @@
 # BSJiraIntegration
 
+
+Jira Integration with BrowserStack.
+
+![BrowserStack Logo](https://d98b8t1nnulk5.cloudfront.net/production/images/layout/logo-header.png?1469004780)
+
+
 ## Set the following environment variables before test execution
 * BrowserStack Username and Accesskey
 
