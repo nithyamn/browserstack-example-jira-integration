@@ -19,8 +19,8 @@ public class SessionDetails {
 
     /**This method gets session details based on the product and logs it in the Jira dashboard**/
     public void sessionData(SessionId sessionId, DesiredCapabilities caps) throws Exception{
-        String username = System.getenv("BROWSERSTACK_USERNAME");
-        String accessKey = System.getenv("BROWSERSTACK_ACCESS_KEY");
+        String username = System.getenv("BROWSERSTACK_USERNAME"); //"YOUR_BROWSERSTACK_USERNAME";
+        String accessKey = System.getenv("BROWSERSTACK_ACCESS_KEY");//"YOUR_BROWSERSTACK_ACCESS_KEY";
         JiraIntegration jiraIntegration = new JiraIntegration();
 
         /**If the "app" capability is present then it is an App Automate session, otherwise it is an Automate session**/

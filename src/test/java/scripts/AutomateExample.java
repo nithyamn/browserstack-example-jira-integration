@@ -15,7 +15,7 @@ import java.util.concurrent.TimeUnit;
 
 public class AutomateExample{
     public String username = System.getenv("BROWSERSTACK_USERNAME");//"YOUR_BROWSERSTACK_USERNAME";
-    public String accessKey = System.getenv("BROWSERSTACK_ACCESS_KEY");//"YOUR_BROWSERSTACK_ACCESS_KEY"
+    public String accessKey = System.getenv("BROWSERSTACK_ACCESS_KEY");//"YOUR_BROWSERSTACK_ACCESS_KEY";
 
     @Test
     public void automateTest() throws Exception{

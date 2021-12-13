@@ -18,7 +18,7 @@ import org.testng.annotations.Test;
 public class AppAutomateExample {
 
     public String userName = System.getenv("BROWSERSTACK_USERNAME"); //"YOUR_BROWSERSTACK_USERNAME";
-    public String accessKey = System.getenv("BROWSERSTACK_ACCESS_KEY");//"YOUR_BROWSERSTACK_ACCESS_KEY"
+    public String accessKey = System.getenv("BROWSERSTACK_ACCESS_KEY");//"YOUR_BROWSERSTACK_ACCESS_KEY";
 
     @Test
     public void appAutomateTest() throws Exception {

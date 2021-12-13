@@ -18,7 +18,7 @@ Log the errored sessions on your JIRA dashabord based on the test status of Brow
         set BROWSERSTACK_USERNAME=<browserstack-username>
         set BROWSERSTACK_ACCESS_KEY=<browserstack-access-key>
         ```
-    * If you wish to hardcode these values, it needs to be done in the AutomateExample.java, AppAutomateExample.java and SessionDetails.java files. 
+    * If you wish to hardcode these values, it needs to be done in the [AutomateExample.java](https://github.com/nithyamn/BSJiraIntegration/blob/main/src/test/java/scripts/AutomateExample.java), [AppAutomateExample.java](https://github.com/nithyamn/BSJiraIntegration/blob/main/src/test/java/scripts/AppAutomateExample.java) and [SessionDetails.java](https://github.com/nithyamn/BSJiraIntegration/blob/main/src/test/java/jira/SessionDetails.java) files. 
       
 * Set your Jira board details
     * For *nix based and Mac machines:
@@ -33,8 +33,8 @@ Log the errored sessions on your JIRA dashabord based on the test status of Brow
         set JIRA_EMAIL=<jira-email>
         set JIRA_ACCESS_TOKEN=<jira-api-token>
         ```
-    * If you wish to hardcode these values, it needs to be done in the JiraIntegration.java file.
-    * Add your Jira board name and the type of issue you want to log in the `getJSON_Body` method of JiraIntegration class.
+    * If you wish to hardcode these values, it needs to be done in the [JiraIntegration.java](https://github.com/nithyamn/BSJiraIntegration/blob/main/src/test/java/jira/JiraIntegration.java) file.
+    * Add your Jira board name and the type of issue you want to log in the [getJSON_Body](https://github.com/nithyamn/BSJiraIntegration/blob/main/src/test/java/jira/JiraIntegration.java#L52) method of JiraIntegration class.
 
 
 ## References
