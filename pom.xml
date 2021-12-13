@@ -7,72 +7,60 @@
     <groupId>BSJiraIntegration</groupId>
     <artifactId>BSJiraIntegration</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <properties>
+        <testng.version>7.4.0</testng.version>
+        <commons-io.version>1.3.2</commons-io.version>
+        <selenium-java.version>3.141.59</selenium-java.version>
+        <json-simple.version>1.1.1</json-simple.version>
+        <io-appium.version>7.3.0</io-appium.version>
+        <javax.json-api.version>1.1.4</javax.json-api.version>
+        <org.json.version>20211205</org.json.version>
+        <java.version>8</java.version>
+        <glassfish.javax.json.version>1.1.4</glassfish.javax.json.version>
+    </properties>
     <dependencies>
         <dependency>
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
-            <version>6.9.10</version>
+            <version>${testng.version}</version>
         </dependency>
         <dependency>
             <groupId>commons-io</groupId>
             <artifactId>commons-io</artifactId>
-            <version>1.3.2</version>
+            <version>${commons-io.version}</version>
         </dependency>
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
             <artifactId>selenium-java</artifactId>
-            <version>3.141.59</version>
+            <version>${selenium-java.version}</version>
         </dependency>
-        <dependency>
-            <groupId>com.browserstack</groupId>
-            <artifactId>browserstack-local-java</artifactId>
-            <version>1.0.5</version>
-        </dependency>
-
         <dependency>
             <groupId>com.googlecode.json-simple</groupId>
             <artifactId>json-simple</artifactId>
-            <version>1.1.1</version>
-        </dependency>
-        <dependency>
-            <groupId>com.assertthat</groupId>
-            <artifactId>selenium-shutterbug</artifactId>
-            <version>0.9</version>
-        </dependency>
-        <dependency>
-            <groupId>ru.yandex.qatools.ashot</groupId>
-            <artifactId>ashot</artifactId>
-            <version>1.5.3</version>
+            <version>${json-simple.version}</version>
         </dependency>
         <dependency>
             <groupId>io.appium</groupId>
             <artifactId>java-client</artifactId>
-            <version>7.3.0</version>
+            <version>${io-appium.version}</version>
             <scope>test</scope>
         </dependency>
-        <dependency>
-            <groupId>com.sun.mail</groupId>
-            <artifactId>javax.mail</artifactId>
-            <version>1.6.0</version>
-        </dependency>
-        <dependency>
-            <groupId>net.lightbody.bmp</groupId>
-            <artifactId>browsermob-core</artifactId>
-            <version>2.1.5</version>
-            <scope>test</scope>
-        </dependency>
+
         <dependency>
             <groupId>javax.json</groupId>
             <artifactId>javax.json-api</artifactId>
-            <version>1.1.4</version>
+            <version>${javax.json-api.version}</version>
         </dependency>
-
+        <dependency>
+            <groupId>org.json</groupId>
+            <artifactId>json</artifactId>
+            <version>${org.json.version}</version>
+        </dependency>
         <dependency>
             <groupId>org.glassfish</groupId>
             <artifactId>javax.json</artifactId>
-            <version>1.1.4</version>
+            <version>${glassfish.javax.json.version}</version>
         </dependency>
-
     </dependencies>
 
     <build>
@@ -86,8 +74,8 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <configuration>
-                    <source>8</source>
-                    <target>8</target>
+                    <source>${java.version}</source>
+                    <target>${java.version}</target>
                 </configuration>
             </plugin>
         </plugins>
