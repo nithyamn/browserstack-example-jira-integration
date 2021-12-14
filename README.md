@@ -5,8 +5,6 @@
 
 Log the errored sessions on your JIRA dashabord based on the test status of BrowserStack sessions using REST APIs.
 
-![BrowserStack Logo](https://d98b8t1nnulk5.cloudfront.net/production/images/layout/logo-header.png?1469004780)
-
 
 ## Setup steps
 * Set Environment Variables 
