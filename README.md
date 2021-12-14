@@ -22,12 +22,12 @@ Log the errored sessions on your JIRA dashabord based on the test status of Brow
     * If you wish to hardcode these values, it needs to be done in the [AutomateExample.java](https://github.com/nithyamn/BSJiraIntegration/blob/main/src/test/java/scripts/AutomateExample.java), [AppAutomateExample.java](https://github.com/nithyamn/BSJiraIntegration/blob/main/src/test/java/scripts/AppAutomateExample.java) and [SessionDetails.java](https://github.com/nithyamn/BSJiraIntegration/blob/main/src/test/java/jira/SessionDetails.java) files. 
     * App Automate - App upload
         * Upload your app on BrowserStack
-              Upload your Android app (.apk or .aab file) or iOS app (.ipa file) to BrowserStack servers using our [REST API](https://www.browserstack.com/docs/app-automate/appium/upload-app-from-filesystem). Here is an example cURL request :
-              ```
-              curl -u "YOUR_USERNAME:YOUR_ACCESS_KEY" \
-              -X POST "https://api-cloud.browserstack.com/app-automate/upload" \
-              -F "file=@/path/to/apk/file"
-              ```
+              - Upload your Android app (.apk or .aab file) or iOS app (.ipa file) to BrowserStack servers using our [REST API](https://www.browserstack.com/docs/app-automate/appium/upload-app-from-filesystem). Here is an example cURL request :
+                  ```
+                  curl -u "YOUR_USERNAME:YOUR_ACCESS_KEY" \
+                  -X POST "https://api-cloud.browserstack.com/app-automate/upload" \
+                  -F "file=@/path/to/apk/file"
+                  ```
               If you want to use a constant value to specify the application under test and don’t want to modify your test scripts after every app upload, you can define a [custom ID](https://www.browserstack.com/docs/app-automate/appium/upload-app-define-custom-id) for your app. 
       
 * Set your Jira board details
