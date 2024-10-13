@@ -14,7 +14,7 @@
         <json-simple.version>1.1.1</json-simple.version>
         <io-appium.version>7.3.0</io-appium.version>
         <javax.json-api.version>1.1.4</javax.json-api.version>
-        <org.json.version>20211205</org.json.version>
+        <org.json.version>20230227</org.json.version>
         <java.version>8</java.version>
         <glassfish.javax.json.version>1.1.4</glassfish.javax.json.version>
     </properties>
